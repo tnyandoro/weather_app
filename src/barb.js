@@ -1,1 +1,1 @@
-export const barb = 'nyandoro'
+export const barb = 'Nyandoro'
