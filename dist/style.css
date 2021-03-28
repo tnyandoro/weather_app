@@ -11,6 +11,7 @@ body {
     background-image: url("https://source.unsplash.com/random/1920x1080/?weather");
     
 }
+
 .card {
     background:#808080d0 !important;
     padding:2em !important;
@@ -21,6 +22,20 @@ body {
     color: cornsilk;
 
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+text-transform: capitalize;
+}
+
+.icon {
+    display: flex;
+}
+
 .temp {
     font-size: 2.5em;
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
@@ -33,13 +48,14 @@ body {
 	line-height: .75;
 	margin: 10px 0;
 }
+
 .search {
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
-button{
+button {
     margin: 0.-5em;
     border-radius:  50%;
     border: none;
@@ -51,9 +67,11 @@ button{
     cursor: pointer;
     transform: 0.2s ease-in-out;
 }
+
 button:hover {
     background:#6495ed;
 }
+
 input.search-bar {
 border: none;
 margin: 1em;
