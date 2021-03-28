@@ -29,11 +29,11 @@ let weather = {
         "Humidity: " + humidity + "%";
       document.querySelector(".wind").innerText =
         "Wind speed: " + speed + " km/h";
-   }
+   },
 
    // Search function for
    search: function () {
-     document.querySelector(".search-bar").value
+     this.fetchWeather(document.querySelector(".search-bar").value)
    }
 };
 
