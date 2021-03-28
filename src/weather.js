@@ -17,6 +17,7 @@ let weather = {
     const { speed } = data.wind;
     const { all } = data.clouds;
     console.log(name, icon, description, temp, humidity, speed, all);
-    document.querySelector(".city").innertext = "weather in" + name;
+    document.querySelector(".city").innertext = " Weather in" + name;
+    document.querySelector(".icon").innertext = ""
    }
 }
