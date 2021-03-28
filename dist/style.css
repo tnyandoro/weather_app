@@ -85,3 +85,13 @@ font-family: 'Roboto', sans-serif;
 font-size: 1.3em;
 width: calc(100%-70px);
 }
+
+.weather.fecthing {
+    visibility: hidden;
+}
+
+.weather.fecthing:after {
+    visibility: visible;
+    content: "fecthing";
+    color: #fff;
+}

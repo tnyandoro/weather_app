@@ -18,7 +18,7 @@ let weather = {
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
    //  const { all } = data.clouds;
-    console.log(name, icon, description, temp, humidity, speed);
+    // console.log(name, icon, description, temp, humidity, speed);
 
     document.querySelector(".city").innerText = "Weather in " + name;
     document.querySelector(".icon").src =
@@ -29,6 +29,7 @@ let weather = {
         "Humidity: " + humidity + "%";
       document.querySelector(".wind").innerText =
         "Wind speed: " + speed + " km/h";
+        document.querySelector(".weather").classList.remove("fetching")
    },
 
    // Search function for
@@ -43,4 +44,10 @@ document.querySelector(".search button").addEventListener("click", function () {
   weather.search();
 });
 
-document.querySelector(".search-bar").addEventListener("keyup", function)
+document.querySelector(".search-bar").addEventListener("keyup", function(e) {
+  if (e.key === "Enter") {
+    weather.search();
+  }
+})
+
+weather.fetchWeather("Johannesburg")
