@@ -47,6 +47,7 @@ text-transform: capitalize;
 	font-size: 120px;
 	line-height: .75;
 	margin: 10px 0;
+    margin-bottom: 0.5em;
 }
 
 .search {
