@@ -30,4 +30,16 @@ let weather = {
       document.querySelector(".wind").innerText =
         "Wind speed: " + speed + " km/h";
    }
-}
+
+   // Search function for
+   search: function () {
+     document.querySelector(".search-bar").value
+   }
+};
+
+
+// Events
+
+document.querySelector(".search button").addEventListener("click", function() {
+
+})
