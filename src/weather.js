@@ -33,13 +33,14 @@ let weather = {
 
    // Search function for
    search: function () {
-     this.fetchWeather(document.querySelector(".search-bar").value)
-   }
+    this.fetchWeather(document.querySelector(".search-bar").value);
+  },
 };
 
 
 // Events
+document.querySelector(".search button").addEventListener("click", function () {
+  weather.search();
+});
 
-document.querySelector(".search button").addEventListener("click", function() {
-
-})
+document.querySelector(".search-bar").addEventListener("keyup", function)
