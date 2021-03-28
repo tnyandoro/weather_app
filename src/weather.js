@@ -18,6 +18,7 @@ let weather = {
     const { all } = data.clouds;
     console.log(name, icon, description, temp, humidity, speed, all);
     document.querySelector(".city").innertext = " Weather in" + name;
-    document.querySelector(".icon").innertext = ""
+    document.querySelector(".icon").src = "https://openweathermap.org/img/wn/"+ icon + "@2x.png";
+    document.querySelector(".description")
    }
 }
