@@ -29,7 +29,8 @@ let weather = {
         "Humidity: " + humidity + "%";
       document.querySelector(".wind").innerText =
         "Wind speed: " + speed + " km/h";
-        document.querySelector(".weather").classList.remove("fetching")
+        document.querySelector(".weather").classList.remove("fetching");
+        document.body.style
    },
 
    // Search function for

@@ -86,12 +86,17 @@ font-size: 1.3em;
 width: calc(100%-70px);
 }
 
-.weather.fecthing {
+.weather.fetching {
     visibility: hidden;
+    max-height: 30px;
+    position: relative;
 }
 
-.weather.fecthing:after {
+.weather.fetching:after {
     visibility: visible;
     content: "fecthing";
     color: #fff;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
