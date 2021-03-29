@@ -1,0 +1,101 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #222 !important;    
+    background-image: url("https://source.unsplash.com/random/1920x1080/?weather");
+    
+}
+
+.card {
+    background:#808080d0 !important;
+    padding:2em !important;
+    border-radius: 30px !important;
+    width:100%;
+    max-width: 420px;
+    margin:1em;
+    color: cornsilk;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+text-transform: capitalize;
+}
+
+.icon {
+    display: flex;
+}
+
+.temp {
+    font-size: 2.5em;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+    margin-bottom: 0.5em;
+}
+
+.search {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.-5em;
+    border-radius:  50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    background:#4169e1;
+    color:cornsilk;
+    cursor: pointer;
+    transform: 0.2s ease-in-out;
+}
+
+button:hover {
+    background:#6495ed;
+}
+
+input.search-bar {
+border: none;
+margin: 1em;
+outline: none;
+padding: 0.5em 1em;
+border-radius: 24px;
+background: #4169e1;
+color: #fff;
+font-family: 'Roboto', sans-serif;
+font-size: 1.3em;
+width: calc(100%-70px);
+}
+
+.weather.fetching {
+    visibility: hidden;
+    max-height: 30px;
+    position: relative;
+}
+
+.weather.fetching:after {
+    visibility: visible;
+    content: "fecthing";
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
