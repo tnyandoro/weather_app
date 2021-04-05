@@ -10,7 +10,8 @@ module.exports = {
                test: /\.(png|svg|jpg|jpeg|gif)$/i,
                type: 'asset/resource',
              },
-             test: /\.css$/i,
+           {
+			   test: /\.css$/i,
              use: ["style-loader", "css-loader"],
            },
             { test: /\.js$/,
@@ -18,7 +19,8 @@ module.exports = {
         use: {
             // without additional settings, this will reference .babelrc
             loader: 'babel-loader',
-        }}
+        }
+		}
         ]
     },
     devtool: 'source-map',
