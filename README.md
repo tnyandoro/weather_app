@@ -6,7 +6,7 @@
 
 |Main Project page
 
-|![Weather App](https://user-images.githubusercontent.com/30318155/112770767-85094180-9028-11eb-9773-a592183f7c61.png)|
+|![Weather App](https://user-images.githubusercontent.com/30318155/115035450-e193aa00-9ecc-11eb-98e5-62bd6b8373f8.png)|
 
 ## Built With
 
