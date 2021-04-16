@@ -1,5 +1,3 @@
-import fetchWeather from "./weather";
-
 let weather = {
   apiKey: "fc8448ecbdfb7ff960c2d74a2a385fdc",
   fetchWeather: function (city) {
