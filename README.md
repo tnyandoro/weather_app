@@ -22,14 +22,14 @@ This project is found on the following Repo [Weather App](https://github.com/tny
 
 ## Live Demo
 
-You can view the live demo of the project [Here!](https://raw.githack.com/tnyandoro/weather_app/feature/appv1/dist/index.html/)
+You can view the live demo of the project [Here!](https://raw.githack.com/tnyandoro/weather_app/feature/appv1/dist/index.html)
 
 ### Prerequisites
 
 A Morden Browser
 
 ### Setup
-- Go to [https://github.com/tnyandoro/weather_app]
+- Go to [WeatherApp](https://github.com/tnyandoro/weather_app/tree/feature/appv1)
 - Clone the project to your local machine
 - Cd into your directory
 - Run npm install
