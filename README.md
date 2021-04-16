@@ -22,7 +22,7 @@ This project is found on the following Repo [Weather App](https://github.com/tny
 
 ## Live Demo
 
-You can view the live demo of the project [Here!](/)
+You can view the live demo of the project [Here!](https://raw.githack.com/tnyandoro/weather_app/feature/appv1/dist/index.html/)
 
 ### Prerequisites
 
