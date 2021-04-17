@@ -8,7 +8,7 @@ var weather = {
   fetchWeather: function fetchWeather(city) {
     var _this = this;
 
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&units=metric&appid=").concat(this.apiKey)).then(function (response) {
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&units=metric&appid=").concat(this.apiKey)).then(function (response) {
       return response.json();
     }).then(function (data) {
       return _this.displayWeather(data);
