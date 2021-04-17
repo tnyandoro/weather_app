@@ -54,6 +54,7 @@ text-transform: capitalize;
     display:flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 button {
