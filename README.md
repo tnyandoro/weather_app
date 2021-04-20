@@ -34,6 +34,8 @@ A Morden Browser
 - Cd into your directory
 - Run npm install
 - Type: npm run build
+- Go to the 'dist' directory [cd dist]
+- Open index.html or run your live server
 ## Authors
 
 👤 **Tendai Nyandoro**
