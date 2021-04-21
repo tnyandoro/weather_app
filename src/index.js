@@ -16,12 +16,21 @@ const weather = {
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-
     document.querySelector('.city').innerText = `Weather in ${name}`;
     document.querySelector('.icon').src = `https://openweathermap.org/img/wn/${icon}.png`;
     document.querySelector('.description').innerText = description;
-    document.querySelector('.temp').innerText = `${temp}°C`;
-    // document.querySelector('.temp').innerText = `${(temp * 9 / 5) + 32}°F`;
+
+    const toCels = document.querySelector('#toCels');
+    const toFahr = document.querySelector('#toFahr');
+
+    toCels.addEventListener('click', () => {
+      document.querySelector('.temp').innerText = `${Math.floor(temp)}°C`;
+    });
+
+    toFahr.addEventListener('click', () => {
+      document.querySelector('.temp').innerText = `${Math.floor(temp * (9 / 5) + 32)}°F`;
+    });
+
     document.querySelector('.humidity').innerText = `Humidity: ${humidity}%`;
     document.querySelector('.wind').innerText = `Wind speed: ${speed} km/h`;
     document.querySelector('.weather').classList.remove('fetching');
