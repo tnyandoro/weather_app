@@ -22,24 +22,27 @@ var weather = {
     var _data$main = data.main,
         temp = _data$main.temp,
         humidity = _data$main.humidity;
-    var speed = data.wind.speed; //  const { all } = data.clouds;
-    // console.log(name, icon, description, temp, humidity, speed);
-
+    var speed = data.wind.speed;
     document.querySelector('.city').innerText = "Weather in ".concat(name);
     document.querySelector('.icon').src = "https://openweathermap.org/img/wn/".concat(icon, ".png");
     document.querySelector('.description').innerText = description;
-    document.querySelector('.temp').innerText = "".concat(temp, "\xB0C");
+    var toCels = document.querySelector('#toCels');
+    var toFahr = document.querySelector('#toFahr');
+    toCels.addEventListener('click', function () {
+      document.querySelector('.temp').innerText = "".concat(Math.floor(temp), "\xB0C");
+    });
+    toFahr.addEventListener('click', function () {
+      document.querySelector('.temp').innerText = "".concat(Math.floor(temp * (9 / 5) + 32), "\xB0F");
+    });
     document.querySelector('.humidity').innerText = "Humidity: ".concat(humidity, "%");
     document.querySelector('.wind').innerText = "Wind speed: ".concat(speed, " km/h");
     document.querySelector('.weather').classList.remove('fetching');
     document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1920x1080/?".concat(name, "')");
   },
-  // Search function for
   search: function search() {
     this.fetchWeather(document.querySelector('.search-bar').value);
   }
-}; // Events
-
+};
 document.querySelector('.search button').addEventListener('click', function () {
   weather.search();
 });
